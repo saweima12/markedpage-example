@@ -1,3 +1,4 @@
+import customHeadingId from 'marked-custom-heading-id';
 import { CustomClassifierHandle } from './classifier/custom.js';
 
 const config = {
@@ -10,7 +11,7 @@ const config = {
 	],
 	marked: {
 		options: {},
-		extensions: {}
+		extensions: [customHeadingId()]
 	},
 };
 
