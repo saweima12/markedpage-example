@@ -30,8 +30,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@types/marked": "^4.0.3",
     "marked": "^4.0.16",
     "marked-custom-heading-id": "^1.0.2",
-    "markedpage": "^0.0.12"
+    "markedpage": "^0.0.16"
   }
 }
