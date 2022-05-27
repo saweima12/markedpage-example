@@ -1,5 +1,6 @@
 import customHeadingId from 'marked-custom-heading-id';
-import { CustomClassifierHandle } from './classifier/custom.js';
+import { CustomClassifierHandle } from './extension/classifier.js';
+import { extendPageData } from './extension/pagedata.js';
 
 const config = {
 	title: 'MarkedPage Test Project',
@@ -9,6 +10,7 @@ const config = {
 		{ id: 'category', params: { keys: ['category', 'categories'] }, type: 'frontmatter' },
 		{ id: 'custom', params: { path: '/_posts/' }, type: CustomClassifierHandle },
 	],
+	extendPageData: extendPageData,
 	marked: {
 		options: {},
 		extensions: [customHeadingId()]
