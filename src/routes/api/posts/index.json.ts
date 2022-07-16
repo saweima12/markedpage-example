@@ -3,7 +3,7 @@ import { classifiedSet } from 'markedpage';
 import type { SourcePage, DirectoryClassifierResult } from 'markedpage';
 import type { RequestHandler } from '@sveltejs/kit';
 
-export const get: RequestHandler = async () => {
+export const GET: RequestHandler = async () => {
 
     const pageSet: DirectoryClassifierResult = await classifiedSet("post");
     const list: Array<SourcePage> = pageSet.pages.slice().sort((a, b) => {
