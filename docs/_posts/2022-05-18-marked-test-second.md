@@ -1,9 +1,8 @@
 ---
-title: MarkedPage Test Page Second
+title: MarkedPage Test Page Second Test
 tags:
  - test
-category:
- - default
+ - test2
 ---
 
 

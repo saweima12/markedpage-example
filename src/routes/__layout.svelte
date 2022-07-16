@@ -5,7 +5,7 @@
 
         const response = await fetch("/api/config.json");
         const data: Record<string, any> = await response.json();
-        siteConfig.set(data);
+        siteConfig.set(data); 
 
         return {
         }
@@ -15,4 +15,6 @@
 
 <div class="main-wrapper">
     <slot />
+
+    asoidjsaoid
 </div>
