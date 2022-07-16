@@ -7,12 +7,13 @@ specifiers:
   '@types/marked': ^4.0.3
   '@typescript-eslint/eslint-plugin': ^5.30.6
   '@typescript-eslint/parser': ^5.30.6
+  chalk: ^5.0.1
   eslint: ^8.19.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
   marked: ^4.0.18
   marked-custom-heading-id: ^1.0.2
-  markedpage: ^0.0.1-9.6
+  markedpage: ^0.1.2
   prettier: ^2.7.1
   prettier-plugin-svelte: ^2.7.0
   svelte: ^3.49.0
@@ -25,9 +26,10 @@ specifiers:
 dependencies:
   '@sveltejs/adapter-static': 1.0.0-next.36
   '@types/marked': 4.0.3
+  chalk: 5.0.1
   marked: 4.0.18
   marked-custom-heading-id: 1.0.2_marked@4.0.18
-  markedpage: 0.0.1-9.6
+  markedpage: 0.1.2_chalk@5.0.1
   vite: 3.0.0
 
 devDependencies:
@@ -531,6 +533,11 @@ packages:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
     dev: true
+
+  /chalk/5.0.1:
+    resolution: {integrity: sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
 
   /chokidar/3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
@@ -1320,9 +1327,12 @@ packages:
     hasBin: true
     dev: false
 
-  /markedpage/0.0.1-9.6:
-    resolution: {integrity: sha512-x1KP3GJR6jhI7+fUbNZDYc4Vu/bUbGVNOUawdCw/UELzMA9bFkUYlKoozlAfk7GqtZhP07P0iXpCbilqSY7oRg==}
+  /markedpage/0.1.2_chalk@5.0.1:
+    resolution: {integrity: sha512-C8Vbe4HsgQ8u8QhNR0pTYJYWo0k85DEVWVwHHySP1YVVkVcjzOjIcLlzi6PIyLFbRilrE2xbUAy3GmwL6kr8fg==}
+    peerDependencies:
+      chalk: ^5.0.1
     dependencies:
+      chalk: 5.0.1
       front-matter: 4.0.2
       marked: 4.0.18
       remove-markdown: 0.5.0

@@ -15,3 +15,11 @@ src/route/api/posts/[slug].ts - See how to get markdown content.
 /                 - page list.
 /post/marked-test - page content.
 ```
+
+# HMR
+```
+vite.config.js
+src/route/__layout.svelte
+```
+
+See how to add HMR support for markdown file.

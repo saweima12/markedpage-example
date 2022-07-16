@@ -16,14 +16,10 @@
 
     onContentUpdate((payload: Record<string, any>) => {
         let slug = $page.params.slug;
+        // update endpoint data.
         invalidate(`/api/posts.json`);
         invalidate(`/api/posts/${slug}.json`);
-        console.log(payload);
     });
-
-    if (import.meta.hot) {
-
-    }
 </script>
 
 <div class="main-wrapper">
