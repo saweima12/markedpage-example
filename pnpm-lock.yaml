@@ -13,7 +13,7 @@ specifiers:
   eslint-plugin-svelte3: ^4.0.0
   marked: ^4.0.18
   marked-custom-heading-id: ^1.0.2
-  markedpage: ^0.1.8
+  markedpage: ^0.1.10
   prettier: ^2.7.1
   prettier-plugin-svelte: ^2.7.0
   svelte: ^3.49.0
@@ -29,7 +29,7 @@ dependencies:
   chalk: 5.0.1
   marked: 4.0.18
   marked-custom-heading-id: 1.0.2_marked@4.0.18
-  markedpage: 0.1.8
+  markedpage: 0.1.10
   vite: 3.0.2
 
 devDependencies:
@@ -1323,8 +1323,8 @@ packages:
     hasBin: true
     dev: false
 
-  /markedpage/0.1.8:
-    resolution: {integrity: sha512-9TcBBYCfnJtG5IFvpMkecHD0jd12iFbMYblpQUY2Jw99tAFVesdD/VtvooRuhy6GWjbIjtjrk6Ag9pYv9R2o5A==}
+  /markedpage/0.1.10:
+    resolution: {integrity: sha512-1PJJYa7P1JHq2ezqSA/urkpuZlKrsDlHkEDQraWiRCZK/fj0kqLOnUj8zlw6dX1EHb7ugGFVnsxQA9ZubxVV5w==}
     dependencies:
       front-matter: 4.0.2
       kleur: 4.1.5

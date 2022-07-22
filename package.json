@@ -35,7 +35,7 @@
     "chalk": "^5.0.1",
     "marked": "^4.0.18",
     "marked-custom-heading-id": "^1.0.2",
-    "markedpage": "^0.1.8",
+    "markedpage": "^0.1.10",
     "vite": "^3.0.2"
   }
 }
