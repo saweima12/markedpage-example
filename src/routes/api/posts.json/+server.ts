@@ -1,3 +1,6 @@
+import { json } from '@sveltejs/kit';
+
+// @migration task: Check imports
 import { classifiedSet } from 'markedpage';
 
 import type { SourcePage, DirectoryClassifierResult } from 'markedpage';
@@ -10,9 +13,7 @@ export const GET: RequestHandler = async () => {
         return new Date(b.frontMatter.created).getTime() - new Date(a.frontMatter.created).getTime();
     });
 
-    return {
-        body: {
-            list
-        }
-    }
+    return json({
+    list
+})
 }

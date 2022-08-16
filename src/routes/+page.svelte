@@ -1,19 +1,6 @@
-<script lang="ts" context="module">
-    import type { Load } from '@sveltejs/kit';
-    export const load : Load = async ({fetch}) => {
-        const response = await fetch("/api/posts.json");
-        const { list } = await response.json();
-
-        return {
-            props: {
-                list
-            }
-        }
-
-    }; 
-</script>
-
 <script lang="ts">
+    throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
     import { siteConfig } from '$lib/store';
     export let list: Array<Record<string, any>>;
 </script>

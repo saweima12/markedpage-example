@@ -1,3 +1,4 @@
+import { json } from '@sveltejs/kit';
 import { getPage } from 'markedpage';
 import { getFormatedDate } from '$lib/helper';
 
@@ -12,10 +13,8 @@ export const GET: RequestHandler = async ({ params }) => {
 
     const content = await page.render();
     // console.log(page)
-    return {
-        body: {
-            metadata: page.frontMatter,
-            content: content
-        }
-    }
+    return json({
+    metadata: page.frontMatter,
+    content: content
+})
 }
