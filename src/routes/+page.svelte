@@ -1,8 +1,9 @@
 <script lang="ts">
-    throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-
     import { siteConfig } from '$lib/store';
-    export let list: Array<Record<string, any>>;
+    // loading data.
+    import type { PageData } from './$types';
+    export let data: PageData;
+    $: ({ list } = data);
 </script>
 
 <svelte:head>

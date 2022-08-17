@@ -1,4 +1,4 @@
-import type { PageLoad } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
 export const load : PageLoad = async ({fetch, params}) => {
     const { slug } = params;
 
@@ -6,8 +6,8 @@ export const load : PageLoad = async ({fetch, params}) => {
     const { metadata, content, raw } = await response.json();
 
     return {
-    metadata,
-    content,
-}
+        metadata,
+        content,
+    }
 
 }; 
