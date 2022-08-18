@@ -10,10 +10,7 @@ export const GET: RequestHandler = async () => {
 
     const pageSet: FrontMatterClassifierResult = await classifiedSet("tag");
     
-    console.log(pageSet);
-
-
     return json({
-    pageSet
-})
+        pageSet
+    })
 }

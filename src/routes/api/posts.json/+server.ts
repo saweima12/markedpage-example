@@ -14,6 +14,6 @@ export const GET: RequestHandler = async () => {
     });
 
     return json({
-    list
-})
+        list
+    });
 }

@@ -6,7 +6,5 @@ export const GET: RequestHandler = async () => {
 
     const config = await siteConfig();
     
-    return json({
-    ...config
-})
+    return json(config)
 }

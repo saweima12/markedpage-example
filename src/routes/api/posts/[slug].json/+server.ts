@@ -14,7 +14,7 @@ export const GET: RequestHandler = async ({ params }) => {
     const content = await page.render();
     // console.log(page)
     return json({
-    metadata: page.frontMatter,
-    content: content
-})
+        metadata: page.frontMatter,
+        content: content
+    })
 }
