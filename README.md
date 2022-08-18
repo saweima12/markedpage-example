@@ -5,9 +5,9 @@ A markedpage example project.
 ## Endpoints
 ```
 src/site.config.js - See how to custom classifier
-src/route/api/config.ts - See how to get configuration
-src/route/api/posts/index.ts - See how to get the article list
-src/route/api/posts/[slug].ts - See how to get markdown content.
+src/route/api/config.json/+server.ts - See how to get configuration
+src/route/api/posts.json/+server.ts - See how to get the article list
+src/route/api/posts/[slug].json/+server.ts - See how to get markdown content.
 ```
 
 ## Page
@@ -19,7 +19,7 @@ src/route/api/posts/[slug].ts - See how to get markdown content.
 # HMR
 ```
 vite.config.js
-src/route/__layout.svelte
+src/route/+layout.svelte
 ```
 
 See how to add HMR support for markdown file.
