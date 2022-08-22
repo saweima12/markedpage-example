@@ -31,10 +31,9 @@
   "dependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.39",
     "@types/marked": "^4.0.5",
-    "chalk": "^5.0.1",
     "marked": "^4.0.18",
     "marked-custom-heading-id": "^1.0.2",
-    "markedpage": "^0.1.13",
+    "markedpage": "0.1.14",
     "vite": "3.0.2"
   }
 }

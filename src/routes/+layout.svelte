@@ -1,7 +1,7 @@
 <script lang="ts">
     import { invalidate } from '$app/navigation';
     import { page } from '$app/stores';
-    import { onContentUpdate } from 'markedpage';
+    import { onContentUpdate } from 'markedpage/helper';
 
     onContentUpdate((payload: Record<string, any>) => {
         let slug = $page.params.slug;
