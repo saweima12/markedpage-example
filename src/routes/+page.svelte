@@ -1,9 +1,18 @@
 <script lang="ts">
+    import { invalidate } from '$app/navigation';
     import { siteConfig } from '$lib/store';
-    // loading data.
+    
     import type { PageData } from './$types';
+    // loading data.
     export let data: PageData;
     $: ({ list } = data);
+
+    import { onContentUpdate } from 'markedpage/helper';
+    onContentUpdate((payload: Record<string, any>) => {
+        // update endpoint data.
+        invalidate(`/api/posts.json`);
+    });
+
 </script>
 
 <svelte:head>
